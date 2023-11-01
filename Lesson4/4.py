@@ -1,3 +1,10 @@
+def SumOfNumbers(N):
+    ListOfNumbers = []
+    for x in range(N):
+        Numbers = int(input())
+        ListOfNumbers.append(Numbers)
+    return sum(ListOfNumbers)
+
+
 N = int(input())
-S = [int(input()) for x in range(N)]
-print(sum(S))
+print(SumOfNumbers(N))
