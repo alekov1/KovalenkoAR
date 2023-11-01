@@ -1,11 +1,6 @@
-A = int(input())
-B = int(input())
-
-if A < B:
-    while A != B+1:
-        print(A)
-        A += 1
-else:
-    while A != B-1:
-        print(A)
-        A -= 1
+def SquenceOfNumbers(A: int, B: int):
+    if A < B:
+        return [*range(A, B+1)]
+    else:
+        return [*range(A, B-1, -1)]
+print(SquenceOfNumbers(15, 1))
