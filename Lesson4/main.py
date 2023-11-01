@@ -1,8 +1,7 @@
-# Задание 1
-A = int(input())
-B = int(input())
+#задание 1
+def numbers(A: int, B: int):
+    if A <= B:
+        return [int(i) for i in range(A, B+1)]
 
-if A <= B:
-    while A != B+1:
-        print(A)
-        A += 1
+for x in numbers(7, 15):
+    print(x)
