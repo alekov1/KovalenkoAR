@@ -1,11 +1,11 @@
-N = int(input())
-x = 2
-x1 = 2
-count = 1
+def Numbers(a, b):
+    if a <= b:
+        return
+    ListOfNumbers = []
+    for i in range(a, b - 1, -1):
+        if i % 2 != 0:
+            ListOfNumbers.append(i)
+    return ListOfNumbers
 
-while x <= N:
-    x = x * x1
-    count += 1
-count -= 1
-x = 2
-print(x**count, count)
+numbers = Numbers(13, 3)
+print(numbers)
