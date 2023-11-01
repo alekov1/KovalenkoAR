@@ -1,6 +1,10 @@
-n = 9
-count = 0
-while n != 0:
-    n = int(input())
-    count += 1
-print(count - 1)
+def Numbers(x):
+    x = 0
+    y = 1
+    count = 0
+    while y != 0:
+        y = int(input())
+        count += 1
+    return count - 1
+
+print(Numbers(1))
