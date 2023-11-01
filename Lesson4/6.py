@@ -6,7 +6,7 @@ def Numbers(N):
             factor_N = factor_N * S[y]
     ListOfFactorN.append(factor_N)
     return ListOfFactorN
-0
+
 
 N = int(input())
 print(Numbers(N))
