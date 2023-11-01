@@ -1,3 +1,6 @@
-n = int(input())
-S = [int(x)**3 for x in range(1, n+1)]
-print(sum(S))
+def Numbers(N):
+    ListOfNumbers = [int(x)**3 for x in range(1, N+1)]
+    return sum(ListOfNumbers)
+
+N = int(input())
+print(Numbers(N))
