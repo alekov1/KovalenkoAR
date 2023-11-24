@@ -50,7 +50,9 @@ for letter in json_text:
         json_dict[letter] = json_text[letter]
 
 
+
 with open('JSON_GitHub.txt', 'w') as convert_file:
-    convert_file.write(json.dumps(json_dict))
+    for key, value in json_dict.items():
+        convert_file.write(f'{key}: {value}\n')
 
 
